@@ -1,5 +1,5 @@
 var dustfs = require('dustfs');
-dustfs.dirs('../dust');
+dustfs.dirs('./dust');
 var jsonObj = {
 				"name1":"vinayagar",
 				"exists":true,
