@@ -1,0 +1,5 @@
+<h1>{name1} is GOD and he does {~s}{exists}</h1>
+<p>Types of{items}</p>
+{#names}
+ {name}{~n} {/name}
+ {names}
