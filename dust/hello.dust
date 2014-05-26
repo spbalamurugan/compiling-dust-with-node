@@ -1,5 +1,8 @@
-<h1>{name1} is GOD and he does {~s}{exists}</h1>
-<p>Types of{items}</p>
-{#names}
- {name}{~n} {/name}
- {names}
+{#Users}
+{~n}
+{name} is available and he has {~s}{experience} years of experience.
+Types of skills are {~s}
+{#skills}
+ {name}{~n}
+{/skills}
+{/Users}
