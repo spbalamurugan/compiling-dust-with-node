@@ -1,7 +1,9 @@
 var dustfs = require('dustfs');
-dustfs.dirs('./dust');
-var jsonObj = {
-				"Users":[{"name":"Developer",
+dustfs.dirs('./dust');var dust = require('dustjs-linkedin');
+dust.helper = require('dustjs-helpers');
+var jsonObj = { 		"count":12,
+        		 	"regModel":{"boardingStatus":"PENDING_ACCOUNT_ACTIVATION"},
+                		"Users":[{"name":"Developer",
 				"experience":12,
 				"passport":true,
 				"skills":[{"name":"Problem Solving"},{"name":"Algorithms"},{"name":"enthusiasm"}]
