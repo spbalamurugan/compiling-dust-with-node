@@ -6,3 +6,19 @@ Types of skills are {~s}
  {name}{~n}
 {/skills}
 {/Users}
+
+You have {{count}} new messages
+
+{@if cond="('{regModel.boardingStatus}' == ('PENDING_ACCOUNT_ACTIVATION' || 'PENDING_PARTNER_APPROVAL' ))"}
+    Account Pending
+{:else}
+    Account activated
+{/if}
+
+{@if cond="({count} > 0)"}{count} newwww messages.{:else}no message{/if}
+
+{@eq key="count" value="10"}
+confirmed
+{:else}
+unconfirmed
+{/eq}
